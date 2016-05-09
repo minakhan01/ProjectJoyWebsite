@@ -14,7 +14,7 @@
 	<!-- One Page Module Specific Stylesheet -->
 	<link rel="stylesheet" href="css/onepage.css" type="text/css" />
 	<!-- / -->
-
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
 	<!-- <link rel="stylesheet" href="css/dark.css" type="text/css" /> -->
 	<!-- <link rel="stylesheet" href="css/font-icons.css" type="text/css" /> -->
 	<!-- <link rel="stylesheet" href="css/et-line.css" type="text/css" /> -->
@@ -80,30 +80,89 @@
 
 		</header><!-- #header end -->
 
-		<!-- Slider
-		============================================= -->
-		<section id="slider" class="slider-parallax full-screen force-full-screen">
+				<section id="slider" class="swiper_wrapper customjs with-header canvas-slider canvas-slider-grid clearfix">
 
-			<div class="slider-parallax-inner">
-
-				<div class="full-screen force-full-screen section nopadding nomargin noborder ohidden">
-
-					<div class="container center">
+			<div class="swiper-container swiper-parent">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" style="background: url('images/12.jpg') center center; background-size:cover;">
+						<a href="#">
+							<div class="overlay">
+								<div class="text-overlay">
+									<div class="text-overlay-title">
+										<h3>Fixed Aperture</h3>
+									</div>
+									<div class="text-overlay-meta">
+										<span>Illustrations, Graphics</span>
+									</div>
+								</div>
+							</div>
+						</a>
 					</div>
 
-					<div class="video-wrap">
-						<video poster="images/videos/3.jpg" preload="auto" loop autoplay>
-							<source src='images/videos/3.webm' type='video/webm' />
-							<source src='images/videos/3.mp4' type='video/mp4' />
-						</video>
-						<div class="video-overlay" style="background: rgba(255,255,255,0.20);"></div>
+					<div class="swiper-slide" style="background: url('images/12.jpg') center center; background-size:cover;">
+						<a href="#">
+							<div class="overlay">
+								<div class="text-overlay">
+									<div class="text-overlay-title">
+										<h3>Fixed Aperture</h3>
+									</div>
+									<div class="text-overlay-meta">
+										<span>Illustrations, Graphics</span>
+									</div>
+								</div>
+							</div>
+						</a>
 					</div>
 
+					<div class="swiper-slide" style="background: url('images/12.jpg') center center; background-size:cover;">
+						<a href="#">
+							<div class="overlay">
+								<div class="text-overlay">
+									<div class="text-overlay-title">
+										<h3>Fixed Aperture</h3>
+									</div>
+									<div class="text-overlay-meta">
+										<span>Illustrations, Graphics</span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="swiper-slide" style="background: url('images/12.jpg') center center; background-size:cover;">
+						<a href="#">
+							<div class="overlay">
+								<div class="text-overlay">
+									<div class="text-overlay-title">
+										<h3>Fixed Aperture</h3>
+									</div>
+									<div class="text-overlay-meta">
+										<span>Illustrations, Graphics</span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="swiper-slide" style="background: url('images/12.jpg') center center; background-size:cover;">
+						<a href="#">
+							<div class="overlay">
+								<div class="text-overlay">
+									<div class="text-overlay-title">
+										<h3>Fixed Aperture</h3>
+									</div>
+									<div class="text-overlay-meta">
+										<span>Illustrations, Graphics</span>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					
 				</div>
-
 			</div>
 
-		</section><!-- #slider end -->
+		</section>
 
 
 	</div><!-- #wrapper end -->
@@ -116,6 +175,42 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script type="text/javascript" src="js/functions.js"></script>
+
+	<script type="text/javascript">
+		jQuery(window).load(function(){
+			var swiperParent = new Swiper('.swiper-parent',{
+				paginationClickable: false,
+				slidesPerView: 5,
+				grabCursor: true,
+				prevButton: '#slider-arrow-left',
+				nextButton: '#slider-arrow-right'
+			});
+
+			var swiperNested1 = new Swiper('.swiper-nested-1',{
+				direction: 'vertical',
+				paginationClickable: false,
+				slidesPerView: 3,
+				prevButton: '#sw1-arrow-top',
+				nextButton: '#sw1-arrow-bottom'
+			});
+
+			var swiperNested2 = new Swiper('.swiper-nested-2',{
+				direction: 'vertical',
+				paginationClickable: false,
+				slidesPerView: 2,
+				prevButton: '#sw2-arrow-top',
+				nextButton: '#sw2-arrow-bottom'
+			});
+
+			var swiperNested3 = new Swiper('.swiper-nested-3',{
+				direction: 'vertical',
+				paginationClickable: false,
+				slidesPerView: 2,
+				prevButton: '#sw3-arrow-top',
+				nextButton: '#sw3-arrow-bottom'
+			});
+		});
+	</script>
 
 </body>
 </html>

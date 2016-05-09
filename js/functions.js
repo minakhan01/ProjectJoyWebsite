@@ -755,16 +755,16 @@ var SEMICOLON = SEMICOLON || {};
 		},
 
 		defineColumns: function( element ){
-			var column = 4;
+			var column = 5;
 
 			if( element.hasClass('portfolio-full') ) {
 				if( element.hasClass('portfolio-3') ) column = 3;
 				else if( element.hasClass('portfolio-5') ) column = 5;
 				else if( element.hasClass('portfolio-6') ) column = 6;
-				else column = 4;
+				else column = 5;
 
 				if( $body.hasClass('device-sm') && ( column == 4 || column == 5 || column == 6 ) ) {
-					column = 3;
+					column = 5;
 				} else if( $body.hasClass('device-xs') && ( column == 3 || column == 4 || column == 5 || column == 6 ) ) {
 					column = 2;
 				} else if( $body.hasClass('device-xxs') ) {
